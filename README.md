@@ -1,0 +1,2 @@
+# AMPL
+Some AMPL exercises

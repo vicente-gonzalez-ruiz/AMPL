@@ -1,0 +1,6 @@
+reset;
+model ex2b.mod
+data ex2b.dat
+option solver cplex;
+solve;
+display x;

@@ -1,0 +1,41 @@
+x_i = amount of product
+
+max Sum p_ix_i
+
+x_1 <= 6000
+x_2 <= 4000
+
+Sum x_i/one-hour_i <= b = 400
+
+x_i >= 0 for all i
+
+1/y_i unot production time
+
+LP = all the variables are continuos
+MILP = some variables are integer
+NLP = when there are non-linear functions
+
+xpress LP solvers
+
+min c^Tx = Sumi=1 n c_ix_i
+s.t. Ax<=b
+
+reset;
+
+model ex1.mod
+
+dat ex1.dat
+
+option sover cplex;
+solve;
+display x;
+
+----------
+
+Exercise 2:
+
+Variables: X_ij -> amount to transport from S_i to T_j (continuous)
+Objective: mininize cost: sum_ij C_ij * X_ij where C_ij = unit transportation cost from S_i to T_j
+Subject to: x_ij >= 0 for all i,j
+Subject to: (capacity) supply: sum_j X_ij<= s_i where s_i is the capacity of S_i for all i
+Subject to: demand: sum_i X_ij = d_j where d_j is the demand of T_j

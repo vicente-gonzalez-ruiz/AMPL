@@ -1,0 +1,6 @@
+set Prod := t1 t2;
+param maxval := t1 6000 t2 4000;
+param b := 40;
+param: onehour p := 
+t1 200 25
+t2 140 30;

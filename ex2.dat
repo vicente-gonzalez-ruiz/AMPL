@@ -1,0 +1,9 @@
+set Inventories := S1 S2 S3;
+set Shops := T1 T2 T3 T4;
+
+param capacity := S1 135 S2 56 S3 93;
+param demand := T1 62 T2 83 T3 39 T4 91;
+param transportation_prices : T1 T2 T3 T4 :=
+S1 132	9999	97	103
+S2 85	91	9999	9999
+S3 106	89	100	98;

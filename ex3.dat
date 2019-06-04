@@ -1,0 +1,12 @@
+set Products := Trousers Jackets Blouses Shirts Skirts;
+set Resources := 1sttextile 2ndtextile 3rdtextile thread Workhours;
+
+param capacity := 1sttextile 300 2ndtextile 400 3rdtextile 120 thread 4000 Workhours 100;
+param gain := Trousers 2000 Jackets 4000 Blouses 600 Shirts 1500 Skirts 1800;
+
+param used : Trousers Jackets Blouses Shirts Skirts :=
+1sttextile	2.3	3.1	0	0	1.9
+2ndtextile	0.4     1.1     0.5     0       1.3
+3rdtextile	0       0.5     1.2     2.0     0.5
+thread		20	40      10      15      15
+Workhours	0.5     1       0.3     1       0.4;

@@ -1,0 +1,12 @@
+We assume that there are n type of possible products to produce, and b hours
+for the production. For every products the profit per unit, the maximum
+quantity to produce and how much product we produce in an hour is given. Maximize
+the profit!
+
+What is the mathematical model?
+
+
+Having 2 product, t1 and t2, with profit 25 and 30 Ft, maximum number of pieces are
+6000 and 4000, respectively, how much should we make for maximal profit?
+In one hour 200 and 140 piece can be produced, if only one type of product is made 
+and 40 hours are available for production.

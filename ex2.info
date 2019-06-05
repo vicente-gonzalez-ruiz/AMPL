@@ -1,0 +1,25 @@
+Three inventories (S1,S2,S3) serves four shops (T1,T2,T3,T4). 
+The capacity of the inventories and the order of the shops in corresponding
+units is the following:
+
+S1	S2	S3
+-------------------
+135	56	93
+
+T1	T2	T3	T4
+---------------------------
+62	83	39	91
+
+The price of the transportation of a unit can be seen in the following
+table.
+
+   |	T1	T2	T3	T4
+---+--------------------------------
+S1 |	132	-	97	103
+S2 |	85	91	-	-
+S3 |	106	89	100	98
+
+A) How to fulfill all the orders with minimal cost?
+
+B) How the solution changes if there can be transportation between shops and
+between inventories.

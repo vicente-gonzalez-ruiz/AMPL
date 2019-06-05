@@ -1,0 +1,7 @@
+model ex4.mod
+data ex4.dat
+option solver cplex;
+solve;
+option display_1col 0;
+display x;
+display cost;

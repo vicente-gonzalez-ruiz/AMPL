@@ -19,7 +19,8 @@ Prices, production costs, production quotas, activation costs and minimum batche
 
 There are 23 productive days in january, 20 in february, 23 in march and 22 in april. 
 The activation status of a production line can be changed every month. Minimum batches are
-monthly.
+monthly. The prediction quotas are daily.
+
 Moreover, storage space can be rented at monthly rates of $3.50 for A1, $4.00 for A2 and $3.00 for
 A3. Each product takes the same amount of storage space. The total available volume is 800 units.
 

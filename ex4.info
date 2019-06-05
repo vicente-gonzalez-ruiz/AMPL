@@ -1,0 +1,11 @@
+The Funny Toys Company has four men available for work on four separate jobs. 
+Only one man can work on any one job. The cost of assigning each man to each 
+job is given in the following table. The objective is to assign men to jobs 
+in such a way that the total cost of assignment is minimum.
+
+Job
+Person 	1 	2 	3 	4
+A 	20 	25 	22 	28
+B 	15 	18 	23 	17
+C 	19 	17 	21 	24
+D 	25 	23 	24 	24

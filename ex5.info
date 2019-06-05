@@ -1,0 +1,26 @@
+Production planning
+
+A firm is planning the production of 3 products A1, A2, A3 over a time horizon of 
+4 months (january to april). Demand for the products over the months is as follows:
+
+                             Demand      January    February   March   April
+                                 A1       5300        1200      7400    5300
+                                 A2       4500        5400      6500    7200
+                                 A3       4400        6700     12500   13200
+
+Prices, production costs, production quotas, activation costs and minimum batches are:
+
+                                  Product           A1        A2         A3
+                                Unit prices        $124      $109       $115
+                             Activation costs    $150000   $150000     $100000
+                             Production costs     $73.30    $52.90     $65.40
+                            Production quotas       500       450        550
+                             Minimum batches         20        20        16
+
+There are 23 productive days in january, 20 in february, 23 in march and 22 in april. 
+The activation status of a production line can be changed every month. Minimum batches are
+monthly.
+Moreover, storage space can be rented at monthly rates of $3.50 for A1, $4.00 for A2 and $3.00 for
+A3. Each product takes the same amount of storage space. The total available volume is 800 units.
+
+Write a mathematical program to maximize the profit, and solve it with AMPL. 

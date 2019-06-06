@@ -1,0 +1,7 @@
+model ex6.mod
+data ex6.dat
+option solver cplex;
+solve;
+#option display_1col 0;
+display x;
+display the_profit;

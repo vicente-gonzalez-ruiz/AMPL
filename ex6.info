@@ -25,5 +25,5 @@ The total available workforce is 830000 each year.
 
 Steel, engines, electronics and plastics cannot be imported.
 
-Write a mathematical program that maximizes the gross internal product
+Write a mathematical program that maximizes the profit
 and solve the problem with AMPL.

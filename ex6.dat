@@ -1,0 +1,16 @@
+set Products := Steel Engines E_components Plastics;
+
+param profit := Steel 500 Engines 1500 E_components 300 Plastics 1200;
+
+param used :
+             Steel Engines E_components Plastics :=
+Steel        0     0.02    0            0.01
+Engines      0.8   0       0.15         0.11
+E_components 0.01  0.01    0            0.05
+Plastics     0.2   0.03    0.05         0;
+
+param unit_cost := Steel 250 Engines 300 E_components 50 Plastics 300;
+
+param unit_WL :=  Steel 0.5 Engines 1 E_components 0.5 Plastics 2;
+
+param K := 1000;

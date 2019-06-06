@@ -3,5 +3,6 @@ data ex7.dat
 option solver cplex;
 solve;
 #option display_1col 0;
+display heritages_difference;
 display son0_items;
 display son1_items;

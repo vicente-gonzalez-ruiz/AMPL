@@ -1,0 +1,7 @@
+model ex7.mod
+data ex7.dat
+option solver cplex;
+solve;
+#option display_1col 0;
+display son0_items;
+display son1_items;

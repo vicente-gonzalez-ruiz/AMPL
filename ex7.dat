@@ -1,0 +1,16 @@
+set Items := Monet Bust Vase Porsche Diamond1 Diamond2 Diamond3 Sofa Dogs Sculpture Sailboat Harley Furniture;
+
+param value :=
+Monet 25000
+Bust 5000
+Vase 20000
+Porsche 40000
+Diamond1 12000
+Diamond2 12000
+Diamond3 12000
+Sofa 3000
+Dogs 3000
+Sculpture 10000
+Sailboat 15000
+Harley 10000
+Furniture 13000;

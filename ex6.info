@@ -1,0 +1,29 @@
+The independent state of Carelland mainly exports four goods: steel,
+engines, electronic components and plastics.
+
+The unit prices on the world markets for steel, engines, electronics
+and plastics, expressed in the local currency (the Klunz) are,
+respectively: 500, 1500, 300, 1200.
+
+Producing 1 steel unit requires 0.02 engine units, 0.01 plastics
+units, 250 Klunz in other imported goods and 0.5 man-year of work.
+
+Producing 1 engine unit requires 0.8 steel units, 0.15 electronics
+units, 0.11 plastics units, 300 Klunz in imported goods and 1
+man-years.
+
+One electronics unit requires: 0.01 steel units, 0.01 engine units,
+0.05 plastics units, 50 Klunz in imported goods and 6 man-months.
+
+One plastics unit requires: 0.03 engine units, 0.2 steel units, 0.05
+electronics units, 300 Klunz in imported goods and 2 man-years.
+
+Engine production is limited to 650000 units, plastics production to
+60000 units.
+
+The total available workforce is 830000 each year.
+
+Steel, engines, electronics and plastics cannot be imported.
+
+Write a mathematical program that maximizes the gross internal product
+and solve the problem with AMPL.

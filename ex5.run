@@ -1,0 +1,9 @@
+model ex5.mod
+data ex5.dat
+option solver cplex;
+solve;
+#option display_1col 0;
+display x;
+display y;
+display t;
+display profit;

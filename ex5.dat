@@ -1,7 +1,7 @@
 set Products := 1 2 3;
 set Months := 1 2 3 4;
 
-# Product\Month
+# Products in columns, Months in rows
 param demand :
   1     2     3     4 :=
 1 5300 	1200  7400  5300
@@ -21,10 +21,10 @@ param production_cost := 1 73.30 2 52.90 3 65.40;
 param production_quota := 1 500 2 450 3 550;
 
 # (Product Bactch)
-param minimum batch := 1 20 2 20 3 16;
+param minimum_batch := 1 20 2 20 3 16;
 
 # (Month Days)
 param productive_days := 1 23 2 20 3 23 4 22;
 
 # (Product Rate)
-param storage_rage := 1 3.50 2 4.00 3 3.00; 
+param storage_rate := 1 3.50 2 4.00 3 3.00; 

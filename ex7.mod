@@ -2,10 +2,13 @@ set Items; # Monet, Bust ...
 
 param value{Items};
 
-var son0_items{Items} binary; # Items inherited by son 0
-var son1_items{Items} binary; # Items inherited by son 1
+var inherit{Items} binary; # = 1 if son 1 get item i, 0 otherwise
+var t >= 0;
+var d;
 
-minimize heritages_difference: (sum{i in Items} son0_items[i]*value[i]) - (sum{i in Items} son1_items[i]*value[i]);
+minimize obj: t;
 
-subject to each_item_must_be_inherited_once{i in Items}: son0_items[i] and son1_items[i] == 0;
-subject to each_item_must_be_inherited{i in Items}: son0_items[i] or son1_items[i] == 1;
+subject to def_d: d = sum{i in Items} inherit[i]*value[i] - sum{i in Items} (1-inherit[i])*value[i];
+
+subject to absolute_value_left: t >= d;
+subject to absolute_value_right: d >= -t;

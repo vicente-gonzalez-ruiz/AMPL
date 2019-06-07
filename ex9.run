@@ -1,0 +1,7 @@
+model ex9.mod
+data ex9.dat
+option solver cplex;
+solve;
+#option display_1col 0;
+display a;
+display b;

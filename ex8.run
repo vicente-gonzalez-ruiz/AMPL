@@ -1,0 +1,8 @@
+model ex8.mod
+data ex8.dat
+option solver cplex;
+solve;
+#option display_1col 0;
+display d;
+display scheduling;
+display t;

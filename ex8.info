@@ -1,0 +1,12 @@
+CPU Scheduling
+
+10 tasks must be run on 3 CPUs at 1.33, 2 and 2.66 GHz 
+(each processor can run only one task at a time). The 
+number of elementary operations of the tasks (expressed 
+in billions of instructions (BI)) is as follows:
+
+1.1	2.1	3	1	0.7	5	3	3.5	4	1.5
+
+Schedule tasks to processors so that the completion time of 
+the last task is minimized. Solve the problem with AMPL.
+

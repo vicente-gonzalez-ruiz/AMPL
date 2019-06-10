@@ -1,8 +1,8 @@
-model ex9b.mod
-data ex9b.dat
+model ex9c.mod
+data ex9c.dat
 option solver cplex;
 solve;
 #option display_1col 0;
 display a;
 display b;
-
+display c;

@@ -54,6 +54,9 @@ points. The objective is to minimize the sum of absolute deviations of
 each observed value of y from the value predicted by the linear
 relationship.
 
-(2) Fit the `best' straight line where the objective is to minimize the maximum deviation of all the observed values of y from the value predicted by the linear relationship.
+(2) Fit the `best' straight line where the objective is to minimize
+the maximum deviation of all the observed values of y from the value
+predicted by the linear relationship.
 
-(3) Fit the `best' quadratic curve y = cx^2 + bx + a to this set of data points using the same objectives as in (1) and (2).
+(3) Fit the `best' quadratic curve y = cx^2 + bx + a to this set of
+data points using the same objectives as in (1) and (2).

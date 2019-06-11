@@ -1,4 +1,4 @@
 set terminal png
 set output "ex9c.png"
-plot "ex9.data", 0.125*x**2 - 0.625*x + 2.475
+plot "ex9.data", 0.0337255*x**2 + 0.29451*x + 0.982353
 #pause -1

@@ -1,0 +1,42 @@
+model cg.mod;
+data cg.dat;
+option solver cplex;
+
+repeat {
+problem Master;
+option relax_integrality 1;
+option solver cplex;
+solve;
+display z;
+
+display edgecover;
+
+let{(i,j) in E} pi[i,j] := edgecover[i,j];
+
+problem Pricing;
+option relax_integrality 0;
+option solver cplex;
+solve;
+
+if (reduced_cost > -1e-6) then break;
+
+let m := m+1;
+
+for {(i,j) in E} {
+  if y[i,j] == 1 then {
+    let a[i,j,m] := 1;
+    let Nodes[m] := Nodes[m] union {i,j};
+  }
+}
+
+for {(i,j) in E: a[i,j,m]==1} printf "(%d,%d)\n",i,j;
+let c[m] := card(Nodes[m]);
+
+#problem Master;
+#solve;
+} until 0;
+
+problem Master;
+option relax_integrality 0;
+solve;
+display z;

@@ -1,0 +1,32 @@
+reset;
+model traveling_salesman.mod;
+#data traveling_salesman.dat;
+data germany.dat;
+for {i in V, j in V: i>j} let c[i,j] := c[j,i];
+display c;
+option solver cplex;
+solve;
+#display x;
+param next default 1;
+
+repeat {
+	let k := k + 1;
+
+	printf"1, ";
+	repeat {
+		let next := sum{i in V} i * x[next,i];
+		printf"%d, ", next;
+		let S[k] := S[k] union {next};
+	} until next == 1;
+	printf"\n";
+	if card(S[k]) == n then {
+		break;
+	}
+	solve;
+
+} until 0;
+#display x;
+
+#printf"1, ";
+#repeat {let next := sum{i in V} i * x[next,i]; printf"%d, ", next;} until next == 1;
+#printf"\n";

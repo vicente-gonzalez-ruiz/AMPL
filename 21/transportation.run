@@ -1,0 +1,6 @@
+model transportation.mod;
+data transportation.dat;
+option solver cplex;
+solve;
+option display_1col 10;
+display x;

@@ -1,0 +1,16 @@
+# transportation.dat
+param n := 3;
+param m := 4;
+param c: 1 2 3 4 :=
+1     132  9999   97	 103
+2     85   91  	  9999	 9999
+3     106  89  	  100	 98;
+param cap :=
+1     135
+2     56
+3     93;
+param dem :=
+1     62
+2     83
+3     39
+4     91;

@@ -1,0 +1,6 @@
+model fitting.mod;
+data fitting.dat;
+option solver cplex;
+solve;
+display a;
+display b;

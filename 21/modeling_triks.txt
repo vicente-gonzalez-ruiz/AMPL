@@ -1,0 +1,36 @@
+1. z is free. Hot to model with non-negative variables?
+
+   x = y-z; y,z >= 0
+
+2. Objective min f(x) is nonlinear. How to have a linera objective?
+
+   min f(x) -> min t; t >= f(x)
+
+3. min max{i=1..n} f_i(x) -> min t >= f_i(x) for all i
+
+4. min |f(x)| -> min t; t>= f(x) and t >= -f(x)
+
+5. x <= |f(x)| ->
+
+if f(y) <= 0 delta=1
+if f(y) >= 0 delta=0
+                     delta=1
+x <= f(y) + delta*M ---------> x <= infinite
+
+                           delta=0
+x <= -f(y) + (1 - delta)M ---------> x <= infinite
+
+f(y) <= 0 + (1-delta)M
+f(y) >= 0 - deltam*M
+
+Curve fitting:
+variables: a, b
+objective:
+
+	min sum_i | y_i - (bx_i+a)| = min sum_i t_i
+
+	t_i >= y_i - (bx_i + a)
+	t_i >= (bx_i + a) - y_i
+
+
+
